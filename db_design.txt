@@ -1,0 +1,35 @@
+-------------------------------------
+                KEY
+-------------------------------------
+
+#      Number
+;      String
+|      One Of
++      Any Combo Of
+\/     Condition
+""     Category
+[]     Key
+
+
+
+-------------------------------------
+               SPEC
+-------------------------------------
+
+Units
+	"Team"
+		"Unit"
+			Stats
+				Speed #
+				Health #
+				Damage #
+				AttackType Physical | Projectile | Healing
+				DamageRecieve Physical + Projectile + Healing
+				Projectile \ AttackType == Projectile / []
+			Template ;
+Projectiles
+	"Projectile"
+		Speed #
+		Template ;
+UI
+	"Component"
