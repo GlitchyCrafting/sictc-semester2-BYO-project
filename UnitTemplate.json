@@ -1,0 +1,209 @@
+{
+	"name": "Unit",
+	"metadata-version": 1,
+	"author": "Gruficlath",
+	"platforms": [
+		"ai2.appinventor.mit.edu"
+	],
+	"extensions": {},
+	"keys": [
+		"name"
+	],
+	"components": [
+		{
+			"id": "Unit_{name}",
+			"type": "HorizontalArrangement",
+			"properties": {
+				"Width": -2
+			},
+			"components": [
+				{
+					"id": "VerticalArrangement1_{name}",
+					"type": "VerticalArrangement",
+					"properties": {
+						"AlignHorizontal": 3
+					},
+					"components": [
+						{
+							"id": "UnitImagePicker_{name}",
+							"type": "ImagePicker",
+							"properties": {
+								"Height": 100,
+								"Width": 100,
+								"Text": "Choose Image"
+							},
+							"components": []
+						},
+						{
+							"id": "UnitName_{name}",
+							"type": "TextBox",
+							"properties": {
+								"Hint": "Unit Name",
+								"TextAlignment": 1,
+								"Text": "Unit_{name}"
+							},
+							"components": []
+						}
+					]
+				},
+				{
+					"id": "VerticalArrangement2_{name}",
+					"type": "VerticalArrangement",
+					"properties": {
+						"Width": -2
+					},
+					"components": [
+						{
+							"id": "HorizontalArrangement3_{name}",
+							"type": "HorizontalArrangement",
+							"properties": {
+								"AlignVertical": 2
+							},
+							"components": [
+								{
+									"id": "Label2_{name}",
+									"type": "Label",
+									"properties": {
+										"Text": "Speed"
+									},
+									"components": []
+								},
+								{
+									"id": "Speed_{name}",
+									"type": "TextBox",
+									"properties": {
+										"NumbersOnly": true,
+										"Text": "0"
+									},
+									"components": []
+								}
+							]
+						},
+						{
+							"id": "HorizontalArrangement2_{name}",
+							"type": "HorizontalArrangement",
+							"properties": {
+								"AlignVertical": 2
+							},
+							"components": [
+								{
+									"id": "Label1_{name}",
+									"type": "Label",
+									"properties": {
+										"Text": "Health"
+									},
+									"components": []
+								},
+								{
+									"id": "Health_{name}",
+									"type": "TextBox",
+									"properties": {
+										"NumbersOnly": true,
+										"Text": "0"
+									},
+									"components": []
+								}
+							]
+						},
+						{
+							"id": "HorizontalArrangement4_{name}",
+							"type": "HorizontalArrangement",
+							"properties": {
+								"AlignVertical": 2
+							},
+							"components": [
+								{
+									"id": "Label3_{name}",
+									"type": "Label",
+									"properties": {
+										"Text": "Damage"
+									},
+									"components": []
+								},
+								{
+									"id": "Damage_{name}",
+									"type": "TextBox",
+									"properties": {
+										"NumbersOnly": true,
+										"Text": "0"
+									},
+									"components": []
+								}
+							]
+						},
+						{
+							"id": "HorizontalArrangement5_{name}",
+							"type": "HorizontalArrangement",
+							"properties": {
+								"AlignVertical": 3
+							},
+							"components": [
+								{
+									"id": "Label4_{name}",
+									"type": "Label",
+									"properties": {
+										"Text": "Attack Type"
+									},
+									"components": []
+								},
+								{
+									"id": "AttackType_{name}",
+									"type": "Spinner",
+									"properties": {
+										"ElementsFromString": "Physical,Projectile,Healing",
+										"Prompt": "Attack Type"
+									},
+									"components": []
+								}
+							]
+						},
+						{
+							"id": "AcceptsPhysical_{name}",
+							"type": "Switch",
+							"properties": {
+								"On": true,
+								"Text": "Accepts Physical"
+							},
+							"components": []
+						},
+						{
+							"id": "AcceptsProjectile_{name}",
+							"type": "Switch",
+							"properties": {
+								"On": true,
+								"Text": "Accepts Projectile"
+							},
+							"components": []
+						},
+						{
+							"id": "HorizontalArrangement6_{name}",
+							"type": "HorizontalArrangement",
+							"properties": {
+								"AlignVertical": 3
+							},
+							"components": [
+								{
+									"id": "Label5_{name}",
+									"type": "Label",
+									"properties": {
+										"Text": "Projectile"
+									},
+									"components": []
+								},
+								{
+									"id": "Projectile_{name}",
+									"type": "Spinner",
+									"properties": {
+										"ElementsFromString": "None",
+										"Prompt": "Projectile"
+									},
+									"components": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"name": "Team",
+	"metadata-version": 1,
+	"author": "Gruficlath",
+	"platforms": [
+		"ai2.appinventor.mit.edu"
+	],
+	"extensions": {},
+	"keys": [
+		"name"
+	],
+	"components": [
+		{
+			"id": "Team_{name}",
+			"type": "HorizontalArrangement",
+			"properties": {
+				"AlignVertical": 2,
+				"Width": -2
+			},
+			"components": [
+				{
+					"id": "TeamName_{name}",
+					"type": "TextBox",
+					"properties": {
+						"Width": -2,
+						"Hint": "Team Name"
+					},
+					"components": []
+				},
+				{
+					"id": "HorizontalArrangement1_{name}",
+					"type": "HorizontalArrangement",
+					"properties": {
+						"AlignHorizontal": 2,
+						"Width": -2
+					},
+					"components": [
+						{
+							"id": "Edit_{name}",
+							"type": "Button",
+							"properties": {
+								"Text": "Edit"
+							},
+							"components": []
+						},
+						{
+							"id": "Remove_{name}",
+							"type": "Button",
+							"properties": {
+								"Text": "Remove"
+							},
+							"components": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
