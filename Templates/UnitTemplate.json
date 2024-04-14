@@ -28,19 +28,10 @@
 							"id": "UnitImagePicker_{name}",
 							"type": "ImagePicker",
 							"properties": {
-								"Height": 100,
-								"Width": 100,
-								"Text": "Choose Image"
-							},
-							"components": []
-						},
-						{
-							"id": "UnitName_{name}",
-							"type": "TextBox",
-							"properties": {
-								"Hint": "Unit Name",
-								"TextAlignment": 1,
-								"Text": "Unit_{name}"
+								"Height": 150,
+								"Width": 150,
+								"Text": "",
+								"Image": "default_sprite.png"
 							},
 							"components": []
 						}
